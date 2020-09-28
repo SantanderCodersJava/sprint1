@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro Banco de Sangue</title>
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <!--Corpo-->
+    
+
+        <!--Cabeçalho / Menu-->
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div><a class="navbar-brand" href="#"><img class="brand" src="./img/logo.png"></a></div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html">Home <span class="sr-only">(atual)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn">Cadastrar-se</a>
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="./pfcad.html">Pessoa Física</a>
+                                <a class="nav-link" href="#">Pessoa Jurídica</a>
+                                <a class="nav-link" href="#">Banco de Sangue</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Como Doar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Onde Doar</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link"  href="#"><img class="menu-ico" src="img/pessoa.png"> Login</a> -->
+                        </li>
+
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <a class="nav-link" href="#"><img class="menu-icon" src="img/pessoa.png"> Login</a>
+                    </form>
+
+                </div>
+            </nav>
+        </header>
+
+        <!--Seções-->
+        <main role="main">
+
+                        
+            <div class="container">
+
+                <!--Foto-->
+                <section class="picture">
+                    <div class="silhuette">
+                        <div><img class="#" src="./img/silhueta.png"></div>
+                    </div>     
+                    <!--<form method="POST" enctype="multipart/form-data"> 
+                        <div>
+                            <label for="foto">Foto:</label>
+                            <input type="file" name="foto" accept="image/*">
+                        </div>    
+                     </form>-->            
+                </section>
+                
+                <!--Dados do Banco de Sangue-->
+                <section class="bloodDonorCenter">
+
+                    <!--Título da Seção-->
+                    <div class="cardtop">
+                        <div><img class="icon" src="./img/icons/bdcIcon.png"></div>
+                        <h2>Dados da Instituição</h2>
+                    </div>
+
+                    <!--Linha-->
+                    <div class="separator"></div>
+
+                    <!--Formulário-->
+                    <div class="box">
+                        <form action="" method="POST">
+
+                            <div class="form-row">
+                                <!--Nome-->
+                                <div class="form-group col-md-6 mx-auto">
+                                    <label for="nome_instituicao">Nome da Instituição: </label>
+                                    <input class="form-control" type="text" placeholder="Banco de Sangue de São Paulo"
+                                        name="nome_instituicao" value="" required />
+                                </div>
+                                <!--Email-->
+                                <div class="form-group col-md-5 mx-auto">
+                                    <label for="email_institucional">Email Institucional: </label>
+                                    <input class="form-control" type="email" placeholder="cadastro@bancodesangue.gov.br"
+                                        name="email_institucional" value="" required />
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <!--CNPJ-->
+                                <div class="form-group col-md-6 mx-auto">
+                                    <label for="cnpj">CNPJ: </label>
+                                    <input class="form-control" type="text" placeholder="11.111.111/1111-11" name="cnpj"
+                                        value="" required />
+                                </div>
+                                <!--Telefone-->
+                                <div class="form-group col-md-5 mx-auto">
+                                    <label for="telefone">Telefone: </label>
+                                    <input class="form-control" type="text" placeholder="(11) 3333-3333" name="telefone"
+                                        value="" required />
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </section>
+
+                <!--Dados do Contato/Pessoa que realizou o cadastro-->
+                <section class="contact">
+
+                    <!--Título da Seção-->
+                    <div class="cardtop">
+                        <div><img class="icon" src="./img/icons/contact.png"></div>
+                        <h2>Dados para Contato</h2>
+                    </div>
+
+                    <!--Linha-->
+                    <div class="separator"></div>
+
+                    <div class="box">
+                        <!--Formulário-->
+                        <form action="" method="POST">
+                            <div class="form-row">
+                                <!--Nome do Contato-->
+                                <div class="form-group col-md-6 mx-auto">
+                                    <label for="nome_contato">Nome para Contato: </label>
+                                    <input class="form-control" type="text" placeholder="Maria Silva"
+                                        name="nome_contato" value="" required />
+                                </div>
+                                <!--Email do Contato-->
+                                <div class="form-group col-md-5 mx-auto">
+                                    <label for="email_institucional">Email Institucional: </label>
+                                    <input class="form-control" type="email" placeholder="maria@bancodesangue.gov.br"
+                                        name="email_institucional" value="" required />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!--Telefone do Contato-->
+                                <div class="form-group col-md-6 mx-auto">
+                                    <label for="telefone">Telefone: </label>
+                                    <input class="form-control" type="text" placeholder="(11) 3333-3333" name="telefone"
+                                        value="" required />
+                                </div>
+                                <!--Cargo do Contato-->
+                                <div class="form-group col-md-5 mx-auto">
+                                    <label for="cargo">Cargo: </label>
+                                    <input class="form-control" type="text" placeholder="Diretora" name="cargo" value=""
+                                        required />
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+
+                </section>
+
+                <!--Endereço do Banco de Sangue-->
+                <section class="address">
+
+                    <!--Título da Seção-->
+                    <div class="cardtop">
+                        <div><img class="icon" src="./img/icons/address.png"></div>
+                        <h2>Endereço da Instituição</h2>
+                    </div>
+
+                    <!--Linha-->
+                    <div class="separator"></div>
+
+                    <div class="box">
+                        <!--Formulário-->
+                        <form action="" method="POST">
+
+                            <!--CEP-->
+                            <div class="form-group col-md-4">
+                                <label for="cep">CEP: </label>
+                                <input class="form-control" type="text" placeholder="00000-000" name="cnpj" value=""
+                                    required />
+                            </div>
+
+                            <!--Logradouro-->
+                            <div class="form-group col-md-12">
+                                <label for="logradouro">Logradouro: </label>
+                                <input class="form-control" type="text" placeholder="Avenida Paulista" name="logradouro"
+                                    value="" required />
+                            </div>
+
+                            
+                            <div class="form-row">
+                                <!--Número-->
+                                <div class="form-group col-md-2 mx-auto">
+                                    <label for="numero">Número: </label>
+                                    <input class="form-control" type="number" placeholder="3333" name="numero" value=""
+                                        required />
+                                </div>
+                                <!--Complemento-->
+                                <div class="form-group col-md-3 mx-auto">
+                                    <label for="complemento">Complemento: </label>
+                                    <input class="form-control" type="text" placeholder="Conjunto 1111"
+                                        name="complemento" value="" required />
+                                </div>
+                                <!--Bairro-->
+                                <div class="form-group col-md-6 mx-auto">
+                                    <label for="bairro">Bairro: </label>
+                                    <input class="form-control" type="text" placeholder="Higienópolis" name="bairro"
+                                        value="" required />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!--Cidade-->
+                                <div class="form-group col-md-6 mx-auto">
+                                    <label for="cidade">Cidade: </label>
+                                    <input class="form-control" type="text" placeholder="São Paulo" name="cidade"
+                                        value="" required />
+                                </div>
+                                <!--Estado-->
+                                <div class="form-group col-md-5 mx-auto">
+                                    <label for="estado">Estado: </label>
+                                    <select class="form-control" name="estado">
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </section>
+
+                <!--Demanda de Tipos Sanguíneos-->
+                <section class="bloodType">
+
+                    <!--Título da Seção-->
+                    <div class="cardtop">
+                        <div><img class="icon" src="./img/icons/blood.png"></div>
+                        <h2>Demanda por Tipo Sanguíneo</h2>
+                    </div>
+
+                    <!--Linha-->
+                    <div class="separator"></div>
+
+                    <div class="box">
+
+                        <!--Escolha Tipos Sanguíneos-->
+                        <form action="" method="POST">
+                            <div class="positive">
+                                <img class="blood" src="./img/positive.png">
+                                
+                                <img class="blood" src="./img/Apositive.png">
+                                <input type="checkbox" name="tipoSanguineo" value="Apositivo">
+                                
+                                <img class="blood" src="./img/Bpositive.png">
+                                <input type="checkbox" name="tipoSanguineo" value="Bpositivo">
+                                
+                                <img class="blood" src="./img/ABpositive.png">
+                                <input type="checkbox" name="tipoSanguineo" value="ABpositivo">
+
+                                <img class="blood" src="./img/Opositive.png">
+                                <input type="checkbox" name="tipoSanguineo" value="Opositivo">
+                            </div>
+
+                            <div class="negative">
+                                <img class="blood" src="./img/negative.png">
+                                
+                                <img class="blood" src="./img/Anegative.png">
+                                <input type="checkbox" name="tipoSanguineo" value="Apositivo">
+                                
+                                <img class="blood" src="./img/Bnegative.png">
+                                <input type="checkbox" name="tipoSanguineo" value="Bpositivo">
+                                
+                                <img class="blood" src="./img/ABnegative.png">
+                                <input type="checkbox" name="tipoSanguineo" value="ABpositivo">
+
+                                <img class="blood" src="./img/Onegative.png">
+                                <input type="checkbox" name="tipoSanguineo" value="Opositivo">
+                            </div>
+                            
+                        </form>
+                    </div>        
+
+                </section>
+
+                <div class="btn">                   
+                    <form action="" method="POST">
+                        <div><input class="bloodbtn" type="image" src="./img/positive.png"></div>
+                        <h3>Enviar</h3>
+                    </form>
+                </div>
+
+        </main>
+
+
+
+
+        <!--Rodapé-->
+        <footer>
+
+            <div class="fsections">
+
+                <!--Fale Conosco-->
+                <div class="fsec1">
+                    <div>
+                        <h5>fale conosco</h5>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/daniela-reis" target="_blank"><img class="git"
+                                    src="./img/gitRodape.png"></a><a href="mailto:danielareis.ufabc@gmail.com">
+                                danielareis.ufabc@gmail.com</a></p>
+                        <p><a href="https://github.com/rodriguespaula1003" target="_blank"><img class="git"
+                                    src="./img/gitRodape.png"></a><a href="mailto:rodrigues.paula.1003@gmail.com">
+                                rodrigues.paula.1003@gmail.com</a></p>
+                        <p><a href="https://github.com/DavidChavess" target="_blank"><img class="git"
+                                    src="./img/gitRodape.png"></a><a href="mailto:davi.ch.fe@gmail.com">
+                                davi.ch.fe@gmail.com</a></p>
+                        <p><a hferf="#" target="_blank"><img class="git" src="./img/gitRodape.png"></a><a
+                                href="mailto:erikalmlima@gmail.com"> erikalmlima@gmail.com</a></p>
+                        <p><a href="https://github.com/alessandrop76" target="_blank"><img class="git"
+                                    src="./img/gitRodape.png"></a><a href="mailto:alessandropereira6000@gmail.com">
+                                alessandropereira6000@gmail.com</a></p>
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <!--Santander-->
+                <div class="fsec2">
+                    <p><a href="https://www.becas-santander.com/pt/program/santandercodersjava2020" target="_blank">
+                            <h5>Projeto Integrador Santander Coders Java 2020</h5>
+                        </a></p>
+                    <p><a href="https://www.digitalhouse.com/br/curso/desenvolvimento-web-full-stack" target="_blank">
+                            <h6>Digital House</h6>
+                        </a></p>
+                    <p><a class="backtop" href="#">Voltar ao topo</a></p>
+                </div>
+
+
+                <!--Redes Sociais-->
+                <div class="fsec3">
+                    <p>
+                        <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/whats.png"
+                                target="_blank"></a>
+                        <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/facebook1.png"
+                                target="_blank"></a>
+                        <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/gplus.png"
+                                target="_blank"></a>
+                        <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/github.png"
+                                target="_blank"></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </footer>
+
+    
+
+</body>
+
+</html>
