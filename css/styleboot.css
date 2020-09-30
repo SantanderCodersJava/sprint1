@@ -10,14 +10,14 @@ body {
 
 .container {
     margin: 0px auto;
-    width: 900px; 
+    width: 800px; 
   /* padding-right: 15px;
     padding-left: 15px; */
     /* background: #77f0d1; */
   }
  
   .container-fluid {
-    width: 900px;
+    width: 800px;
     margin: 0px auto;
    /* background: #364d8d; */
   }
@@ -551,8 +551,7 @@ footer{
 
 /* ......................................................................................... */
 
- 
-@media (min-width: 576px) {
+ @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
