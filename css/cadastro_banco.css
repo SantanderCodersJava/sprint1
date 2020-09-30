@@ -1,5 +1,5 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     background-color: #FFF8F8;
     margin: 0px;
 }
@@ -172,9 +172,6 @@ body{
   
 
 
-/*Verificar configurações*/
-
-
 .box {
     width: 100%;
     border: 2px solid #FF0000;
@@ -211,9 +208,14 @@ body{
     height: 25vh;
 }
 
+h2{
+    font-size: 5vh;
+}
+
 h3{
     font-weight: bold;
     color: #ee0909;
+    font-size: 4vh;
 }
 
 
