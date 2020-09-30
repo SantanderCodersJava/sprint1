@@ -499,17 +499,34 @@ footer{
     /* background: #0965ee; */
       
 }
+.sec1{
+  display: flex;
+  justify-content: center;
+}
+.sec2{
+  display: flex;
+  justify-content: center;
+}.sec3{
+  display: flex;
+  justify-content: center;
+}
+.fse2 div:nth-child(1){
+  background: #d7ee09;
+}
 .fsec2 a{
       display: flex;
       color: #f8f9fa;
       text-decoration: none;
+    
      
 }
 .fsec2 .backtop{
     font-size: 0.7rem;
+    
 }
 .fsec2.h4.h5.h6{
     text-shadow: 1px 1px 2px rgb(255, 208, 1), 0 0 25px blue, 0 0 5px darkblue;  
+  
 }
 .fsec3{
   
