@@ -6,7 +6,7 @@
     <title>Dashboard doador modelo</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard-doador-principal.css">
     
     <!-- Scripts-->
     <script
@@ -32,8 +32,9 @@
         <aside>
             <!-- Barra de navegação lateral -->
             <div id="mySidenav"class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
+                <a href="#" class="closebtn">&times;</a>    
                 
+                <!-- foto doador -->
                 <div class="card">
                     <img class="card-img-top img-doador" src="img/foto-doador.png" alt="foto doador">
                     <img class="tipo-sangue" src="icones/tipo-doador.png" alt="tipo sanguineo do doador">
@@ -41,6 +42,7 @@
                     
                 </div>               
 
+                <!-- links da barra de navegação lateral -->
                 <a href="#">Meus dados</a>
                 <a href="#">Minhas doações</a>
                 <div id="btn-sair">
@@ -49,15 +51,16 @@
                 
             </div>
             <!-- Elemento para abrir a barra de navegação -->
-            <span onclick="openNav()">☰</span>
+            <span id="btn-abrir">☰</span>
         </aside>
 
+        <!-- área que aparecerá o conteúdo dos links-->
         <div class="principal">
-           
+        <h2>paula rodrigues</h2>
         </div>
 
     </main>
 
-    <script src="js/scripts.js"></script>    
+    <script src="js/dashboard-doador-principal.js"></script>    
 </body>
 </html>
