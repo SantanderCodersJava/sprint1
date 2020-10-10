@@ -515,8 +515,13 @@ img.naosei{
   margin-left: 10px;
   margin-right: 20px;
   align-self: center;
-}
-.comunica span{
+ 
+ }
+ input[type="checkbox"].chbcomunic{
+   background-color: #d7ee09;
+ }
+
+ .comunica span{
   font-weight: bold;
   color: #5A5A5A;
 }
