@@ -36,10 +36,7 @@ $(document).ready (function() {
             cep:{
                 postalcodeBR: true,
                 required:true
-            }
-            estado:{                
-                required:true
-            }          
+            }        
         }
     })
 
