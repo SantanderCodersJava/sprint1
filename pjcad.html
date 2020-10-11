@@ -35,8 +35,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropbtn">Cadastrar-se</a>
             <div class="dropdown-content">
-              <a class="nav-link" href="#">Pessoa Física</a>
-              <a class="nav-link" href="./pjcad.html">Pessoa Jurídica</a>
+              <a class="nav-link" href="./pfcad.html">Pessoa Física</a>
+              <a class="nav-link" href="#">Pessoa Jurídica</a>
               <a class="nav-link" href="#">Banco de Sangue</a>
             </div>
           </li>
@@ -67,9 +67,9 @@
 
       <div class="container silhuette">
         <div class="row">
-          <img id="logo" class="cadphoto" src="img/silhueta.png">
+          <img id="logo" class="cadphoto" src="img/silhuetalogo.png">
           <input id="imagem" type="file" name="imagem" onchange="previewImagem()" accept="image/*">
-          <label for="imagem" class="photo" name="imagem"><img src="./img/btngotasilhueta.png"></label>
+          <label for="imagem" class="photo" name="imagem"><img src="./img/btngotalogo.png"></label>
         </div>
       </div>
 
@@ -77,7 +77,7 @@
         <div class="row cardtopyou">
           <div><img class="topico" src="./img/icons/handico.jpeg"></div>
           <div>
-            Você
+            Sua Empresa
           </div>
           <div>
 
@@ -86,20 +86,27 @@
         <hr class="divsection">
 
 
-        <section class="cardbodyyou">
+        <section class="cardbodyyoupj">
           <div class="bodyleft">
             <div class="row">
-              <div class="col">Nome</div>
+              <div class="col">Empresa - Razão Social</div>
             </div>
             <div class="row">
-              <div class="col"><input class="textboxG" type="text" name="nome" placeholder="Nome"></div>
+              <div class="col"><input class="textboxGG" type="text" name="nome" placeholder="Razão Social"></div>
             </div>
             <br />
             <div class="row">
-              <div class="col">email</div>
+              <div class="col">CNPJ</div>
             </div>
               <div class="row">
-              <div class="col"><input class="textboxG" type="email" name="email" placeholder="email@email.com"></div>
+              <div class="col"><input class="textboxG" type="text" name="cnpj" placeholder="000.000.000/0001-00"></div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col">email - empresa</div>
+            </div>
+              <div class="row">
+              <div class="col"><input class="textboxG" type="email" name="emailEmpresa" placeholder="email@email.com"></div>
             </div>
             <br />
             <div class="row">
@@ -110,46 +117,78 @@
             </div>
             <br />
             <div class="row">
-              <div class="col">Sexo</div>
+              <div class="col">Contato - Nome</div>
             </div>
             <div class="row">
-              <div class="col">
-                <input class="textboxM" type="text" name="feminino" placeholder="Feminino">
-                <input class="rbGender" type="radio" name="gender" value="masculino" placeholder="">
-              </div>
-              <div class="col">
-                <input class="textboxM" type="text" name="masculino" placeholder="Masculino">
-              <input class="rbGender" type="radio" name="gender" value="masculino" placeholder="">
-              </div>
+              <div class="col"><input class="textboxG" type="text" name="contato" placeholder="Nome do contato na empresa"></div>
             </div>
             <br />
+            <div class="row">
+              <div class="col">Quantidade de Colaboradores</div>
+            </div>
+          
           </div>
 
           <div class="bodyright">
             <div class="row">
-              <div class="col">CPF</div>
+              <div class="col">&nbsp;</div>
             </div>
             <div class="row">
-              <div class="col"><input class="textboxG" type="text" name="cpf" placeholder="000.000.000-00"></div>
+              <div class="col">&nbsp;</div>
             </div>
             <br />
             <div class="row">
-              <div class="col">RG</div>
+              <div class="col">I.E</div>
             </div>
             <div class="row">
-              <div class="col"><input class="textboxG" type="text" name="rg" placeholder="00.000.000-0"></div>
+              <div class="col"><input class="textboxG" type="text" name="rg" placeholder="000.000.000-000"></div>
             </div>
             <br />
             <div class="row">
-              <div class="col">Data de Nascimento</div>
+              <div class="col">Data de Fundação</div>
             </div>
             <div class="row">
-              <div class="col"><input class="textboxG" type="date" name="dataNascimento"></div>
+              <div class="col"><input class="textboxG" type="date" name="dataFundacao"></div>
             </div>
             <br />
+            <div class="row">
+              <div class="col">Telefone 2</div>
+            </div>
+            <div class="row">
+              <div class="col"><input class="textboxG" type="tel" name="telefone2" placeholder="(00) 0000-..."></div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col">Contato - email</div>
+            </div>
+            <div class="row">
+              <div class="col"><input class="textboxG" type="email" name="emailContato" placeholder="contato-email@email.com"></div>
+            </div>
+           
+           
           </div>
-        </section>
 
+          
+        </section>
+        <div class="container" >
+          <div class="colaboradores">
+            <img src="./img/nao-sei.png" class="naosei">
+            <input class="rbGender" type="radio" name="porte" value="0a50" placeholder="">
+             <label class="" type="text" name="0a50">0 a 50</label>
+             &nbsp; &nbsp;
+             <input class="rbGender" type="radio" name="porte" value="51a100" placeholder="">
+             <label class="" type="text" name="51a200">51 a 200</label>
+             &nbsp; &nbsp;
+             <input class="rbGender" type="radio" name="porte" value="51a100" placeholder="">
+             <label class="" type="text" name="201a500">201 a 500</label>
+             &nbsp; &nbsp;
+           <input class="rbGender" type="radio" name="porte" value="501a1000" placeholder="">
+            <label class="" type="text" name="501a1000">501 a 1000</label>
+            &nbsp; &nbsp;
+            <input class="rbGender" type="radio" name="porte" value="acimade1000" placeholder="">
+            <label class="" type="text" name="acimade1000">acima de 1000</label>
+            </div>
+        </div>
       </section>
 
       <section class="container addres">
@@ -170,7 +209,7 @@
             </div>
             <br />
             <div class="row">
-              <div class="col">Endereço</div>
+              <div class="col">Empresa - Endereço principal</div>
             </div>
             <div class="row">
               <div class="col"><input class="textboxGG" type="text" name="endereco"
@@ -195,11 +234,19 @@
             <br />
             <div class="row">
               <div class="col">Cidade</div>
-              <div class="col">Estado</div>
+              <div class="col"><label for="cars">Estado</label></div>
             </div>
             <div class="row">
               <div class="col"><input class="textboxG" type="text" name="cidade" placeholder="Cidade"></div>
-              <div class="col"><input class="textboxG" type="text" name="estado" placeholder="Estado"></div>
+              <div class="col"><select id="estados" name="estados" class="optionboxG">
+                <option value=""  style="text-align: center;"></option>
+                <option value="ES"  style="text-align: center;">ES</option>
+                <option value="MG">MG</option>
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+              </select></div>
+              
+
             </div>
             <br />
           </div>
@@ -209,59 +256,28 @@
       </section>
 
 
-      <section class="container bloodtype">
+      <section class="container comunica">
         <div class="row cardtopyou">
-          <div><img class="topico" src="./img/icons/droptype.jpeg"></div>
+          <div><img class="topico" src="./img/icons/comunic.png"></div>
           <div>
-            Tipo Sanguíneo
+            Comunicação
           </div>
         </div>
         <hr class="divsection">
-        <section class="cardbodybloodtype">
-          <div class="bloodleft">
-           
-              <div class=""><img class="naosei" name="naosei" src="./img/nao-sei.png"></div>
-              <div><input class="rbnaosei" type="radio" name="naosei"></div>
-              <div>NÃO SEI</div>
-          
+        <section class="cardbodycomunica">
+          <div class="cbavisos">
+            <div class="row">
+              <input type="checkbox" class="chbcomunic" name="newsletter"><span>Aceita receber nossa Newsletter</span>
             </div>
-                    
-          <div class="bloodright">
-              <div class="row">
-                <div class=""><img class="positivo" name="gotaMais" src="./img/gotaMais.png"></div>
-                <div class=""><input class="rbpositivo" type="radio" name="gotaMais" hidden></div>
-
-                <div class=""><img class="positivo" name="apositivo" src="./img/gotaA.png"></div>
-                <div class=""><input class="rbpositivo" type="radio" name="type" value="A"></div>
-
-                <div class=""><img class="positivo" name="bpositivo" src="./img/gotaB.png"></div>
-                <div class=""><input class="rbpositivo" type="radio" name="type" value="B"></div>
-
-                <div class=""><img class="positivo" name="abpositivo" src="./img/gotaAB.png"></div>
-                <div class=""><input class="rbpositivo" type="radio" name="type" value="AB"></div>
-
-                <div class=""><img class="positivo" name="opositivo" src="./img/gotaO.png"></div>
-                <div class=""><input class="rbpositivo" type="radio" name="type" value="O"></div>
-              </div>
-
-               <div class="row">
-                <div class=""><img class="positivo" name="gotaMenos" src="./img/gotaMenos.png"></div>
-                <div><input class="rbpositivo" type="radio" name="gotaMenos" hidden></div>
-
-                <div class=""><img class="positivo" name="anegativo" src="./img/gotaA-.png"></div>
-                <div><input class="rbpositivo" type="radio" name="type" value="anegativo"></div>
-
-                <div class=""><img class="positivo" name="bnegativo" src="./img/gotaB-.png"></div>
-                <div><input class="rbpositivo" type="radio" name="type" value="bnegativo"></div>
-
-                <div class=""><img class="positivo" name="abnegativo" src="./img/gotaAB-.png"></div>
-                <div><input class="rbpositivo" type="radio" name="type" value="abnegativo"></div>
-
-                <div class=""><img class="positivo" name="onegativo" src="./img/gotaO-.png"></div>
-                <div><input class="rbpositivo" type="radio" name="type" value="onegativo"></div>
-              
-               </div> 
-              </div>
+            <div class="row">
+             <input type="checkbox" class="chbcomunic" name="campanha"><span>Gostaria de participar de nossas campanhas de doação</span>
+           </div>
+           <div class="row">
+             <input type="checkbox" class="chbcomunic" name="politica"><span>Você concorda com nossa política e termos de privacidade</span>
+           </div>
+          </div>
+        
+         
         </section>
      
         <section class="container enviar">
