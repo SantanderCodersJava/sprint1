@@ -20,13 +20,23 @@ p, li {
     border-top: 1px solid #EE0909;
     border-bottom: 3px solid #EE0909;
     border-right: 2px solid #EE0909;
+    width: 100%;
     height: 70px;
 }
+
+.cab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 #msg-doador {
     color: #ee0909;
     font-weight: bold;
     font-size: 20px;    
+    margin-left: 250px;
 }
 
 #input-busca {
@@ -34,7 +44,8 @@ p, li {
     width: 200px;
     border: none;
     border-radius: 20px;
-    box-shadow: 4px 4px 3px #EE0909;   
+    box-shadow: 4px 4px 3px #EE0909;
+    margin-right: 20px;
 }
 
 /* barra de navegação lateral */
@@ -114,7 +125,6 @@ span {
     left: 15px;
 
 }
-
 #btn-sair {
     background-color: #ee0909;
     color: #fff;
@@ -142,47 +152,42 @@ span {
 
 /* david */ 
 
-.main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100vw;
-    padding: 0; margin: 0;
-}
-
-
 .principal{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #FFF;
+    width: 80%;
+    margin: auto;
     transition: padding .5s;
 }
 
-.texto-vermelho{
-    color: #EE0909;
-    font-weight: 700;
+.section-1, .section-2, .section-3{
+    width: 100%;
+    padding: 20px;   
+    margin: 50px 0px;
 }
 
-.section-1{
-    width: 100%;
-    padding: 20px;
-    height: 200px;
+
+.texto-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.texto-quadro{
     display: flex;
     justify-content: flex-end;
-}
-.section-1 div{
-    margin: 10px;
-}
-.texto-quadro{
-    padding: 10px;
-    width: 100%;
+    padding: 15px;
     background: #EE0909;
     color: #FFF;
     border-radius: 30px;
 }
 .tabela{
-    font-size: 24px;
+    width: 100%;
+    font-size: 16pt;
 }
 
 .tabela tbody tr td{
@@ -196,16 +201,6 @@ span {
 
 }
 
-.data{
-    background-color: #FFF;
-    color: black;
-}
-
-
-.section-1, .section-2, .section-3{
-    width: 100%;
-    padding: 20px;    
-}
 .botao-agendar{
     background-color: #EE0909;
     border-radius: 30px;
@@ -228,10 +223,18 @@ span {
 }
 
 /* responsividade */
-@media(max-width: 768px) {
-    .principal{
-        width: 768px;
+@media (min-width: 768px) and (max-width : 1200px) {
+    #msg-doador {    
+        margin-left: 170px;
     }
+    
+    .texto-quadro{  
+        font-size: 14pt;
+    }
+    .tabela{
+        font-size: 14pt;
+    }
+    
     span {
         font-size: 25px;
         bottom: 55px;
@@ -286,16 +289,21 @@ span {
 }
 
 
-@media(max-width: 425px) {
-   
-    .texto-quadro{
-        font-size: 16pt
+@media(max-width: 460px) {
+    #msg-doador {    
+        margin-left: 100px;
     }
+    
+    .principal{
+        margin: 0 ;
+     }
    
     .tabela{
-        font-size: 16pt;
+        font-size: 8pt;
     }
-
+    .texto-quadro{
+        font-size: 10pt;
+    }
 
     #cabecalho-area {
         height: 80px;

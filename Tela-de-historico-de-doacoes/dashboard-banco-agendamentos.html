@@ -6,7 +6,7 @@
     <title>Dashboard doador modelo</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css-doador/dashboard-historico-doador..css">
     
     <!-- Scripts-->
     <script
@@ -18,52 +18,63 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div id="cabecalho-area">
-            <div class="container">
-                <p id="msg-doador">Olá, nome do doador</p>
-                <form action="">
-                    <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
-                </form>
-            </div>
+    <header id="cabecalho-area"  class="cab">
+        <div>
+            <p id="msg-doador">Olá, nome do doador</p>
         </div>
-    </header>
-    <main>      
+        <form class="form-busca" action="">
+            <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
+        </form>
+      
+    </header>  
+    <main class="main">    
+       
         <aside>
             <!-- Barra de navegação lateral -->
             <div id="mySidenav"class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
+                <a href="#" class="closebtn">&times;</a>    
                 
-                <img class="img-doador" src="img/foto-doador.png" alt="foto doador">
-                <img class="tipo-sangue" src="icones/tipo-doador.png" alt="tipo sanguineo do doador">
-                <p class="nome-doador">Nome do doador</p>
+                <!-- foto doador -->
+                <div class="card">
+                    <img class="card-img-top img-doador" src="img/foto-doador.png" alt="foto doador">
+                    <img class="tipo-sangue" src="icones/tipo-doador.png" alt="tipo sanguineo do doador">
+                    <p class="card-text nome-doador">Nome do doador</p>                       
+                    
+                </div>               
 
-                <a href="javascript:void(0)" onclick="paginaEmBranco()">Meus dados</a>
-                <a href="javascript:void(0)" onclick="mostrarMinhasDoacoes()" >Minhas doações</a>
-                <a href="javascript:void(0)" onclick="paginaEmBranco()">Sair</a>
+                <!-- links da barra de navegação lateral -->
+                <a href="#">Meus dados</a>
+                <a href="#">Minhas doações</a>
+                <div id="btn-sair">
+                    <a href="#" >Sair</a>
+                </div>
+                
             </div>
             <!-- Elemento para abrir a barra de navegação -->
-            <span onclick="openNav()">☰</span>
+            <span id="btn-abrir">☰</span>
         </aside>
-        <div  class="principal">
+
+        <!-- área que aparecerá o conteúdo dos links-->
+        <div class="principal">
             <section class="section-1"> 
-                <div class="quadro">
-                    <h1 class="texto-quadro">Última doação</h1>
-                    <h1 class="data texto-quadro">00/00/0000</h1>
-                </div>
-                <div>
-                    <h1 class="texto-quadro">Posso Doar?</h1>
-                    <h1 class="texto-quadro data">00/00/0000</h1>
+                <div class="texto-esquerda">
+                    <h1 class="texto-quadro">Confirmados</h1>
+                    <h1>985</h1>
                 </div>
             </section>
             <section class="section-2"> 
-                <h1 class="maior-1 texto-quadro">Histótico de doações</h1> 
+                <div class="texto-direita">
+                    <h1 class="texto-quadro">Novos agendamentos</h1>
+                </div>
                 <table class="tabela">
                     <thead>
                         <tr>
-                            <th>Banco de sangue</th>
+                            <th>Doador</th>
                             <th>Dia</th>
                             <th>Horário</th>
+                            <th>Sangue</th>
+                            <th>Confirmação</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -71,8 +82,12 @@
                             <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
+                            <td>XXX XXXXX XXXXX</td>
+                            <td>XXX XXXXX XXXXX</td>
                         </tr>
                         <tr>
+                            <td>XXX XXXXX XXXXX</td>
+                            <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
@@ -81,25 +96,33 @@
                 </table>
             </section>
             <section class="section-3">
-                <h1 class="maior-2 texto-quadro">Solicitações de bancos</h1>
-                
+                <div class="texto-direita">
+                    <h1 class="texto-quadro">Novos agendamentos</h1>
+                </div>              
                 <table class="tabela">
                     <thead>
                         <tr>
-                            <th>Banco de sangue</th>
-                            <th>Endereço</th>
+                            <th>Doador</th>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                            <th>Sangue</th>
+                            <th>Confirmação</th>
                         </tr>
                     </thead>
                     <tbody class="espaco-linhas">
                         <tr>
                             <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
-                            <td><button class="botao-agendar">Agendar</button></td>
+                            <td>XXX XXXXX XXXXX</td>
+                            <td>XXX XXXXX XXXXX</td>
+                            <td><button class="botao-agendar">Remarcado</button></td>
                         </tr>
                         <tr>
                             <td>XXX XXXXX XXXXX</td>
                             <td>XXX XXXXX XXXXX</td>
-                            <td><button class="botao-agendar">Agendar</button></td>
+                            <td>XXX XXXXX XXXXX</td>
+                            <td>XXX XXXXX XXXXX</td>
+                            <td><button class="botao-agendar">Remarcado</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -107,6 +130,6 @@
         </div>
     </main>
 
-    <script src="js/scripts.js"></script>    
+    <script src="js-doador/dashboard-historico-doador.js"></script>    
 </body>
 </html>

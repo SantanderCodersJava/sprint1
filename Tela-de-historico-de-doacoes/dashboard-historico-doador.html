@@ -18,15 +18,14 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div id="cabecalho-area">
-            <div class="container d-flex justify-content-between align-content-center align-items-center">
-                <p id="msg-doador">Olá, nome do doador</p>
-                <form class="form-busca" action="">
-                    <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
-                </form>
-            </div>
+    <header id="cabecalho-area"  class="cab">
+        <div>
+            <p id="msg-doador">Olá, nome do doador</p>
         </div>
+        <form class="form-busca" action="">
+            <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
+        </form>
+      
     </header>  
     <main class="main">    
        
@@ -58,17 +57,19 @@
         <!-- área que aparecerá o conteúdo dos links-->
         <div class="principal">
             <section class="section-1"> 
-                <div>
+                <div class="alinhamento-quadro">
                     <h2 class="texto-quadro">Última doação</h2>
                     <h2 class="data texto-quadro">00/00/0000</h2>
                 </div>
-                <div>
+                <div> 
                     <h2 class="texto-quadro">Última doação</h2>
                     <h2 class="data texto-quadro">00/00/0000</h2>
                 </div>
             </section>
             <section class="section-2"> 
-                <h1 class="texto-quadro">Histótico de doações</h1> 
+                <div>
+                    <h1 class="texto-quadro">Histótico de doações</h1> 
+                </div>
                 <table class="tabela">
                     <thead>
                         <tr>
@@ -92,7 +93,9 @@
                 </table>
             </section>
             <section class="section-3">
-                <h1 class="texto-quadro">Solicitações de bancos</h1>
+                <div>
+                    <h1 class="texto-quadro">Solicitações de bancos</h1>
+                </div>
                 
                 <table class="tabela">
                     <thead>
