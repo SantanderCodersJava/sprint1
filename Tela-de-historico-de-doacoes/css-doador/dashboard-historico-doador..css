@@ -152,15 +152,38 @@ span {
 
 /* david */ 
 
+.center{
+    text-align: center;
+}
+
+
 .principal{
-    width: 80%;
+    width: 90%;
     margin: auto;
     transition: padding .5s;
 }
 
+.botao-whatsapp{
+    border: none;
+    outline: 0px;
+    color: #FFF;
+    background-color: #FFFF;
+}
+
+button:focus{
+    outline: 0;
+}
+.section-1 div {
+    margin: 10px;
+}
+.section-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .section-1, .section-2, .section-3{
     width: 100%;
-    padding: 20px;   
+    padding: 10px;
     margin: 50px 0px;
 }
 
@@ -205,8 +228,7 @@ span {
     background-color: #EE0909;
     border-radius: 30px;
     color: #FFF;
-    padding: 10px;
-    outline: 0;
+    padding: 5px;
     border: none;
 }
 
@@ -227,10 +249,7 @@ span {
     #msg-doador {    
         margin-left: 170px;
     }
-    
-    .texto-quadro{  
-        font-size: 14pt;
-    }
+
     .tabela{
         font-size: 14pt;
     }
@@ -295,8 +314,10 @@ span {
     }
     
     .principal{
-        margin: 0 ;
+        margin: 0;
+        width: 100%;
      }
+   
    
     .tabela{
         font-size: 8pt;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard doador modelo</title>
+    <title>Banco de sangue</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css-doador/dashboard-historico-doador..css">
@@ -20,7 +20,7 @@
 <body>
     <header id="cabecalho-area"  class="cab">
         <div>
-            <p id="msg-doador">Olá, nome do doador</p>
+            <p id="msg-doador">Olá, nome do banco de sangue</p>
         </div>
         <form class="form-busca" action="">
             <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
@@ -58,13 +58,13 @@
         <div class="principal">
             <section class="section-1"> 
                 <div class="texto-esquerda">
-                    <h1 class="texto-quadro">Confirmados</h1>
-                    <h1>985</h1>
+                    <h3 class="texto-quadro">Confirmados</h3>
+                    <h3>985</h3>
                 </div>
             </section>
             <section class="section-2"> 
                 <div class="texto-direita">
-                    <h1 class="texto-quadro">Novos agendamentos</h1>
+                    <h3 class="texto-quadro">Novos agendamentos</h3>
                 </div>
                 <table class="tabela">
                     <thead>
@@ -73,31 +73,31 @@
                             <th>Dia</th>
                             <th>Horário</th>
                             <th>Sangue</th>
-                            <th>Confirmação</th>
+                            <th class="center">Confirmação</th>
 
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
+                            <td>Steve jobs</td>
+                            <td>27/08/1975</td>
+                            <td>07:00</td>
+                            <td>O+</td>
+                            <td class="center" ><button class="botao-whatsapp" onclick="alert('ola')"><img src="img/whatsapp.png" alt="" srcset=""></button></td>
                         </tr>
                         <tr>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
+                            <td>Bill Gates</td>
+                            <td>27/08/1975</td>
+                            <td>07:00</td>
+                            <td>AB+</td>
+                            <td class="center" ><button class="botao-whatsapp" onclick="alert('ola')"><img src="img/whatsapp.png" alt="" srcset=""></button></td>                           
                         </tr>
                     </tbody>
                 </table>
             </section>
             <section class="section-3">
                 <div class="texto-direita">
-                    <h1 class="texto-quadro">Novos agendamentos</h1>
+                    <h3 class="texto-quadro">Agendamentos Cancelados </h3>
                 </div>              
                 <table class="tabela">
                     <thead>
@@ -106,23 +106,23 @@
                             <th>Dia</th>
                             <th>Horário</th>
                             <th>Sangue</th>
-                            <th>Confirmação</th>
+                            <th class="center">Confirmação</th>
                         </tr>
                     </thead>
                     <tbody class="espaco-linhas">
                         <tr>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td><button class="botao-agendar">Remarcado</button></td>
+                            <td>David Chaves Ferreira</td>
+                            <td>14/03/2020</td>
+                            <td>10:45</td>
+                            <td>B+</td>
+                            <td class="center" ><button class="botao-whatsapp" onclick="alert('ola')"><img src="img/whatsapp.png" alt="" srcset=""></button></td>                           
                         </tr>
                         <tr>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td>XXX XXXXX XXXXX</td>
-                            <td><button class="botao-agendar">Remarcado</button></td>
+                            <td>David Chaves Ferreira</td>
+                            <td>14/03/2020</td>
+                            <td>10:45</td>
+                            <td>B+</td>
+                            <td class="center"><button class="botao-agendar">Remarcado</button></td>
                         </tr>
                     </tbody>
                 </table>
