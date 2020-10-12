@@ -295,8 +295,17 @@ label.photo{
   width: 57px;
   height: 57px;
   border-radius: 50%;
- 
-}
+ }
+ .topico3{
+   position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 93%;
+  margin-top: 27%;
+  z-index: 100;
+ }
+
 .cardtopyou div:nth-child(2){
    font-size: 1.8rem;
   align-self: center;
