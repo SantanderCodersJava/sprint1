@@ -27,8 +27,7 @@ console.log(larguraDaJanela);
     if(larguraDaJanela > 768) {
         btnAbrir.addEventListener("click", function openNav() {
             mySidenav.style.width = "200px";
-            principal.style.padding = "0 0 0 200px";
-                
+            principal.style.padding = "0 0 0 200px";              
         });
     }
 
