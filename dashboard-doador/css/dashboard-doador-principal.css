@@ -190,13 +190,18 @@ span {
     }
 
     .cardbodyyou {
-        width: 450px;
+        width: 540px;
         flex-wrap: wrap;
+        justify-content: end;
     }
 
     .cardtopyou div:nth-child(2) {
         font-size: 1.6rem;
        
+    }
+
+    .cardtopyou div:nth-child(3) {
+        min-width: 485px;
     }
 
     .textboxGG {
@@ -211,6 +216,17 @@ span {
         width: 75px;
         height: 90px;
     }
+
+    .divsection {
+        width: 500px;
+        position: relative;
+        right: 75px;
+    }
+
+    .div-cidade {
+        padding-bottom: 20px;
+    }
+
 
 }
 
@@ -259,6 +275,7 @@ span {
     .nome-doador {
         font-size: 14px;
         bottom: 20px;
+        left: 5px;
     }
 
     .sidenav a {
@@ -283,6 +300,63 @@ span {
     
     .principal {
         margin-left: 20px;
+    }
+
+    img.cadphoto {
+        width: 100px;
+        height: 100px;
+    }
+
+    label.photo {
+        margin-left: 25px;
+    }
+
+    .cardtopyou div:nth-child(2) {
+        font-size: 1.4rem;
+    }
+
+    .cardbodyyou {
+        width: 300px;
+        justify-content: start;
+    }
+
+    .cardbodyaddres {
+        width: 400px;
+    }
+
+    .textboxGG {
+        width: 270px;
+    }
+
+    .enviar {
+        margin-top: 30%;
+    }
+
+    .btnenviar {
+        width: 65px;
+        height: 80px;
+    }
+
+    .textboxG {
+        width: 260px;
+    }
+
+    .sexo {
+        padding-bottom: 20px;
+    }
+
+    .cardbodyaddres {
+        width: 300px;
+    }
+
+    .textboxM {
+        width: 120px;
+    }
+
+    .divsection {
+        width: 290px;
+        position: relative;
+        right: 230px;
     }
 
 }
