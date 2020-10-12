@@ -298,21 +298,7 @@ label.photo{
   width: 57px;
   height: 57px;
   border-radius: 50%;
-<<<<<<< HEAD
  }
- .topico3{
-   position: fixed;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-left: 93%;
-  margin-top: 27%;
-  z-index: 100;
- }
-
-=======
-}
-
 .topico2{
   width: 37px;
   height: 37px;
@@ -323,7 +309,6 @@ label.photo{
   height: 80px;
   border-radius: 50%;
 }
->>>>>>> 22695c9bbeefdb47d77f9b9ce3502eb5a525e618
 .cardtopyou div:nth-child(2){
    font-size: 1.8rem;
   align-self: center;
