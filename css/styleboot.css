@@ -50,13 +50,16 @@ select option{
     /* margin-right: -15px;
     margin-left: -15px; */
   }
-
+.nav{
+  z-index: 100;
+}
   
 .navbar{
     background: #EE0909;
     height: 150px;
     display: flexbox;
     margin-top: -50px;
+    z-index: 100;
   }
 .navbar>a{
     color: #f8f9fa;
@@ -123,12 +126,12 @@ select option{
   .dropdown-content a:hover {
     background-color: #EE0909;
     /* border: 0.9px solid #EE0909; */
-    border-top:0.9px solid #ffffff00;
+    border: 2px solid #ffffff;
     border-radius: 30px;
     transition: 500ms;
     outline: none;
     outline-style: none;
-   
+     
   }
   
   /* Show the dropdown menu on hover */
@@ -295,7 +298,17 @@ label.photo{
   width: 57px;
   height: 57px;
   border-radius: 50%;
- 
+}
+
+.topico2{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.topico3{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .cardtopyou div:nth-child(2){
    font-size: 1.8rem;
@@ -387,10 +400,13 @@ label.photo{
 .addresright{
   background: #51325f;
 }
-
+.dropsearchbtn{
+   margin-left: -230px;
+  
+}
 .bloodtype{
   /* background: #150185; */
-  margin-top: 3%;
+  margin-top: 10%;
   display: flexbox;
   justify-items: center;
   width: 800px;
@@ -542,7 +558,12 @@ img.naosei{
   outline: none;
   background: url("./img/enviarbtn.png");
 }
-
+.agendarbtn{
+ position: fixed;
+ margin-left: 92%;
+ margin-top: 27%;
+ z-index: 99;
+}
 /* ....................................................................................... */
 footer{
     display: flexbox;
