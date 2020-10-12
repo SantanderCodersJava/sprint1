@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard doador principal</title>
+    <title>Dashboard banco principal</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/dashboard-doador-principal.css">
+    <link rel="stylesheet" href="css/dashboard-banco-principal.css">
     
     <!-- Scripts-->
     <script
@@ -21,7 +21,7 @@
     <header>
         <div id="cabecalho-area">
             <div class="container">
-                <p id="msg-doador">Olá, nome do doador</p>
+                <p id="msg-banco">Olá, nome do banco de sangue</p>
                 <form action="">
                     <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
                 </form>
@@ -36,15 +36,17 @@
                 
                 <!-- foto doador -->
                 <div class="card">
-                    <img class="card-img-top img-doador" src="img/foto-doador.png" alt="foto doador">
-                    <img class="tipo-sangue" src="icones/tipo-doador.png" alt="tipo sanguineo do doador">
-                    <p class="card-text nome-doador">Nome do doador</p>                       
+                    <img class="card-img-top img-banco" src="img/foto-doador.png" alt="foto doador">
+                    
+                    <p class="card-text nome-banco">Nome do banco de sangue</p>                       
                     
                 </div>               
 
                 <!-- links da barra de navegação lateral -->
-                <a href="dashboard-doador-meus-dados.html">Meus dados</a>
-                <a href="#">Minhas doações</a>
+                <a href="#">Meus dados</a>
+                <a href="#">Meu estoque</a>
+                <a href="#">Agendamentos</a>
+                <a href="#">Dashboard</a>
                 
                 <a href="#" id="btn-sair">Sair</a>
                 
@@ -61,6 +63,6 @@
 
     </main>
 
-    <script src="js/dashboard-doador-principal.js"></script>    
+    <script src="js/dashboard-banco-principal.js"></script>    
 </body>
 </html>

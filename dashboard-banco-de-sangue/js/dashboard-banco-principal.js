@@ -17,8 +17,8 @@ if(larguraDaJanela <= 768) {
 }
     if(larguraDaJanela <= 450) {
         btnAbrir.addEventListener("click", function openNav() {
-            mySidenav.style.width = "120px";
-            principal.style.margin = "0 0 0 120px";
+            mySidenav.style.width = "150px";
+            principal.style.margin = "0 0 0 180px";
         });
     }
 
@@ -33,7 +33,7 @@ if(larguraDaJanela <= 768) {
 // regra para fechar o menu lateral
 btnFechar.addEventListener("click", function closeNav() {
     mySidenav.style.width = "0";
-    principal.style.marginLeft = "20px";
+    principal.style.marginLeft = "100px";
 });
 
 
