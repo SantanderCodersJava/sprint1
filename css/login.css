@@ -1,0 +1,64 @@
+body{
+    font-family: 'Open Sans';
+    margin: 0px;
+    background-image: url('./img/doadorbraco.jpg');
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-size: 100%;
+    background-size: cover;
+    overflow: auto;
+}
+
+.box{
+    display: flex;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10vh;
+    justify-content: space-between;  
+    border: 2px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.form-control{
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #FF0404;
+}
+
+.email, .senha{
+    width: 5vh;
+    height: 5vh;
+}
+
+.btnenviar{
+    display: flex;
+    justify-items: flex-end;
+    background-color: #FFF8F8;
+    width: 8vh;
+    height: 10vh;
+}
+
+.label{
+    font-weight: bold;
+    color: #ee0909;
+    font-size: 3vh;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    font-weight: bold;
+    color: #ee0909;
+    font-size: 4vh;
+}
+
+h4{
+    font-weight: bold;
+    color: #ee0909;
+    font-size: 2vh;
+}
