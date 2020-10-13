@@ -4,9 +4,30 @@
 body {
   margin: 0px auto;
   margin: 0px auto;
-  color: #5a5a5a;
+  color: #5A5A5A;
 }
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  background-image: url("../img/btndropdown.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+select option{
+   color: #EE0909;
+}
 .container {
     margin: 0px auto;
     width: 800px; 
@@ -29,13 +50,16 @@ body {
     /* margin-right: -15px;
     margin-left: -15px; */
   }
-
+.nav{
+  z-index: 100;
+}
   
 .navbar{
     background: #EE0909;
-    height: 90x;
+    height: 150px;
     display: flexbox;
     margin-top: -50px;
+    z-index: 100;
   }
 .navbar>a{
     color: #f8f9fa;
@@ -59,8 +83,8 @@ body {
 .brand{
     /* width: 141px;
     height: 130px; */
-    width: 75px;
-    height: 66px;
+    width: 140px;
+    height: 130px;
 }
 
 
@@ -86,7 +110,7 @@ body {
     background-color: #ffffff00;
     min-width: 250px;
     /* box-shadow: 0px 8px 16px 0px rgb(252, 2, 2); */
-    z-index: 1;
+    z-index: 10;
   }
   
   /* Links inside the dropdown */
@@ -102,12 +126,12 @@ body {
   .dropdown-content a:hover {
     background-color: #EE0909;
     /* border: 0.9px solid #EE0909; */
-    border-top:0.9px solid #ffffff00;
+    border: 2px solid #ffffff;
     border-radius: 30px;
     transition: 500ms;
     outline: none;
     outline-style: none;
-   
+     
   }
   
   /* Show the dropdown menu on hover */
@@ -150,7 +174,7 @@ span.carousel-control-next-icon{
   border: #ffffff00;
   box-shadow: 1px 3px 1px #EE0909;
   text-align: center;
-  color: #969696;
+  color: #5A5A5A;
 }
 
 .textboxG{
@@ -161,7 +185,7 @@ span.carousel-control-next-icon{
   border: #ffffff00;
   box-shadow: 1px 3px 1px #EE0909;
   text-align: center;
-  color: #969696;
+  color:  #5A5A5A;
 }
 
 .textboxM{
@@ -172,7 +196,7 @@ span.carousel-control-next-icon{
   border: #ffffff00;
   box-shadow: 1px 3px 1px #EE0909;
   text-align: center;
-  color: #969696;
+  color: #5A5A5A;
 }
 
 .textboxP{
@@ -183,9 +207,30 @@ span.carousel-control-next-icon{
   border: #ffffff00;
   box-shadow: 1px 3px 1px #EE0909;
   text-align: center;
-  color: #969696;
+  color: #5A5A5A;
 }
 
+
+.textareaboxGG{
+  width: 741px;
+  height: 226px;
+  border-radius: 20px;
+  outline-style: none;
+  border: #ffffff00;
+  box-shadow: 1px 3px 1px #EE0909;
+  text-align: left;
+  color: #5A5A5A;
+}
+.optionboxG{
+  width: 339px;
+  height: 26px;
+  border-radius: 20px;
+  outline-style: none;
+  border: #ffffff00;
+  box-shadow: 1px 3px 1px #EE0909;
+  text-align: center;
+  color:  #5A5A5A;
+}
 
 
 
@@ -227,7 +272,7 @@ label.photo{
       margin-left: 35px;
       display: block;
       padding: 0px;
-      background-image: url("../img/btngotasilhueta.png");
+      /* background-image: url("../img/btngotalogo.png"); */
       background-repeat: no-repeat;
      
 }
@@ -264,7 +309,16 @@ label.photo{
   width: 57px;
   height: 57px;
   border-radius: 50%;
- 
+ }
+.topico2{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.topico3{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .cardtopyou div:nth-child(2){
    font-size: 1.8rem;
@@ -285,11 +339,22 @@ label.photo{
     display: flex;
     /* background: #faf064; */
     width: 800px;
-    height: 304px auto;
+    height: 334px;
     padding: 20px;
     border: 1px solid #EE0909;
     border-radius: 10px;
    
+}
+
+.cardbodyyoupj{
+  display: flex;
+  /* background: #faf064; */
+  width: 800px;
+  height: 514px;
+  padding: 20px;
+  border: 1px solid #EE0909;
+  border-radius: 10px;
+ 
 }
 .bodyleft{
   /* background: #f7a4a4; */
@@ -301,6 +366,14 @@ label.photo{
   /* background: #613104; */
   width: 420px;
   height: 400px auto;
+
+}
+.colaboradores{
+  margin-top: -80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -325,7 +398,7 @@ label.photo{
   display: flex;
   width: 800px;
   min-height: 304px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #EE0909;
   border-radius: 10px;
 }
@@ -337,10 +410,13 @@ label.photo{
 .addresright{
   background: #51325f;
 }
-
+.dropsearchbtn{
+   margin-left: -230px;
+  
+}
 .bloodtype{
   /* background: #150185; */
-  margin-top: 3%;
+  margin-top: 10%;
   display: flexbox;
   justify-items: center;
   width: 800px;
@@ -434,6 +510,47 @@ img.naosei{
   width: 20px;
   height: 20px;
 }
+
+.cardbodycomunica{
+     /* background: #f10303; */
+     display: flex;
+     width: 800px;
+     height: 108px;
+     padding: 20px;
+     border: 1px solid #EE0909;
+     border-radius: 10px;
+    
+}
+.comunica{
+   /* background: #150185; */
+  padding: 20px;
+  margin-top: 6%;
+  display: flexbox;
+  justify-items: center;
+  width: 800px;
+  height: 248px;
+}
+.cbavisos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.chbcomunic{
+  margin-left: 10px;
+  margin-right: 20px;
+  align-self: center;
+ 
+ }
+ input[type="checkbox"].chbcomunic{
+   background-color: #d7ee09;
+ }
+
+ .comunica span{
+  font-weight: bold;
+  color: #5A5A5A;
+}
 .enviar{
   display: flex;
   width: 100%;
@@ -451,6 +568,23 @@ img.naosei{
   outline: none;
   background: url("./img/enviarbtn.png");
 }
+.agendarbtn{
+ position: fixed;
+ margin-left: 92%;
+ margin-top: 27%;
+ z-index: 99;
+}
+.nlcenter{
+  width: 990px;
+  height: 450px;
+  background: red;
+}
+.frame{
+  width: 800px;
+  height: 450px;
+  border: none;
+  background:yellow;
+}
 
 /* ....................................................................................... */
 footer{
@@ -465,13 +599,14 @@ footer{
 .fsections{
     display: flex;
     font-size: 0.9rem;
+    height: auto;
 }
 .fsections ul li a{
     color: aliceblue;
     /* background: #11ee09; */
 }
 .fsec1{
-   
+  box-sizing: border-box;
     /* background: #70ee09; */
     padding: 20px;
 }
@@ -490,6 +625,7 @@ footer{
 .fsec2{
     display: flebox;
     width: 630px;
+    height: auto;
     align-self: center;
     text-align: center;
     padding: 30px;
@@ -530,7 +666,7 @@ footer{
 }
 .fsec3{
   
-    display: flexbox;
+    display: flex;
     align-self: center;
     justify-self: center;
     font-size: 1rem;
@@ -551,11 +687,19 @@ footer{
 
 /* ......................................................................................... */
 
+@media(min-width: 365px){
+  .container {
+    max-width: 340px;
+  }
+}
+
+
  @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
  
+
 }
 
 @media (min-width: 768px) {
