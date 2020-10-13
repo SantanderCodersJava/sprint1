@@ -210,6 +210,17 @@ span.carousel-control-next-icon{
   color: #5A5A5A;
 }
 
+
+.textareaboxGG{
+  width: 741px;
+  height: 226px;
+  border-radius: 20px;
+  outline-style: none;
+  border: #ffffff00;
+  box-shadow: 1px 3px 1px #EE0909;
+  text-align: left;
+  color: #5A5A5A;
+}
 .optionboxG{
   width: 339px;
   height: 26px;
@@ -563,6 +574,18 @@ img.naosei{
  margin-top: 27%;
  z-index: 99;
 }
+.nlcenter{
+  width: 990px;
+  height: 450px;
+  background: red;
+}
+.frame{
+  width: 800px;
+  height: 450px;
+  border: none;
+  background:yellow;
+}
+
 /* ....................................................................................... */
 footer{
     display: flexbox;
