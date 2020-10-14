@@ -6,6 +6,8 @@
         <title>Dashboard doador principal</title>
         <!-- Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/styleboot.css">
         <link rel="stylesheet" href="css/dashboard-doador-principal.css">
         
@@ -21,7 +23,71 @@
 <body>
     <div class="container">
         <form method="post">
-           
+        <div class="row">
+            <table style="color: #5A5A5A; width: 750px;">
+                <thead style="border: 1px solid #e09090; color: aliceblue; background: #ff0000;" >
+                    <td style=" padding: 10px; " colspan="8">Newsletter - Cadastre ou Pesquise as Últimas Informações</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+          
+                </thead>
+                <tbody>
+                    <tr style="font-weight:bold; padding: 10px;">
+                        <td>Data do Informe</td>
+                        <td>Título do Informe</td>
+                        <td>Destinatário</td>
+                        <td colspan="7">Ação</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10/10/2020</td>
+                        <td>Na pandemia também podemos doar sangue</td>
+                        <td>Geral</td>
+                        <td><a href="#"><i  title="Enviar email" class="fa fa-send"></i></a>  <a href="#"><i title="Imprimir" class="fa fa-print"></i></a>  <a href="#"><i title="Arquivar" class="fa fa-file"></i></a>  
+                            <a href="#"> <i title="Editar" class="fa fa-edit"></i></a>  <a href="#"><i title="Deletar" class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr style="background: #ff000046;">
+                        <td>08/07/2020</td>
+                        <td>Alterada regra para doação de sangue</td>
+                        <td>Doadores Frequentes</td>
+                        <td><a href="#"><i title="Enviar email" class="fa fa-send"></i></a>  <a href="#"><i title="Imprimir" class="fa fa-print"></i></a>  <a href="#"><i title="Arquivar" class="fa fa-file"></i></a>  
+                            <a href="#"> <i title="Editar" class="fa fa-edit"></i></a>  <a href="#"><i title="Deletar" class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>13/10/2020</td>
+                        <td>Webinar: doação e transfusão de sangue mais seguras</td>
+                        <td>Geral</td>
+                        <td><a href="#"><i title="Enviar email" class="fa fa-send"></i></a>  <a href="#"><i title="Imprimir" class="fa fa-print"></i></a>  <a href="#"><i title="Arquivar" class="fa fa-file"></i></a>  
+                            <a href="#"> <i title="Editar" class="fa fa-edit"></i></a>  <a href="#"><i title="Deletar" class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <hr class="divsection">
+
+        <form method="post">
+            <div class="row">
+                <div>Data</div>
+            </div>
+            <div class="row">
+                <div><input type="date"  class="textboxG"></div>
+            </div>
+            
+            <br />
             <div class="row">
                 <div>Cadastrar Título da Newsletter</div>
             </div>
@@ -30,6 +96,14 @@
             </div>
             <br />
             <div class="row">
+                <div>Foto Principal</div>
+            </div>
+            <div class="row">
+                <div><input type="file" name="photoNews"></div>
+            </div>
+            <br />
+            <div class="row">
+
                 <div>Texto</div>
             </div>
             <div class="row">
@@ -38,6 +112,13 @@
                 </div>
                         
             </div>
+                    <div id="mytextarea" style="width: 750px; min-height:250px; border-radius: 20px;" >
+                    </div>
+                </div>
+                        
+            </div>
+            <br />
+            <button class="btnenviar" type="submit" name="enviar"><img class="btnenviar" style="width: 80%; height: 80%;" src="../img/enviarbtn.png"></button>
           </form>
         
        
