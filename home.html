@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" alt="DooAmor" href="./img/icons/nurseico.jpeg">
 
   <title>DooAmor</title>
 
@@ -27,7 +27,7 @@
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon bg-light"><img src="./img/menuMobile.png" style="width: 30px; height: 30px;"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
@@ -38,15 +38,21 @@
             <a class="nav-link dropbtn">Cadastrar-se</a>
             <div class="dropdown-content">
               <a class="nav-link" href="./pfcad.html">Pessoa Física</a>
-              <a class="nav-link" href="#">Pessoa Jurídica</a>
-              <a class="nav-link" href="#">Banco de Sangue</a>
+              <a class="nav-link" href="./pjcad.html">Pessoa Jurídica</a>
+              <a class="nav-link" href="./cadastro_banco.html">Banco de Sangue</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Como Doar</a>
+            <a class="nav-link" href="/index.html">Como Doar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Onde Doar</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="./telateste.html">. </a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./dashboard-doador/dashboard-doador-principal.html">Dashboard</a>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link"  href="#"><img class="menu-ico" src="img/pessoa.png"> Login</a> -->
@@ -54,16 +60,14 @@
 
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-           <a class="nav-link" href="#"><img class="menu-ico" src="img/pessoa.png"> Login</a>
+           <a class="nav-link" href="./login.html"><img class="menu-ico" src="img/pessoa.png"> Login</a>
         </form>
 
       </div>
     </nav>
   </header>
-
+  <div class="agendarbtn"><a href="#"><img class="topico3" src="./img/agendarbtn2.png"></a></div>
   <main role="main">
-
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
@@ -145,19 +149,21 @@
 
       <div class="row featurette">
         <h1>Seção 4</h1>
+       
       </div>
-
+    
       <hr class="featurette-divider">
-
+    
       <!-- /FIM DAS FEATUREZINHAS *-* -->
-
+     
     </div><!-- /.container -->
 
-
+   
     <!-- FOOTER -->
+  
     <footer>
       <div class="fsections">
-        <div class="fsec1">
+        <div class="col fsec1">
           <div>
             <h5>fale conosco</h5>
           </div>
@@ -178,22 +184,35 @@
             <p></p>
           </div>
         </div>
-
-        <div class="fsec2">
-          <p><a href="https://www.becas-santander.com/pt/program/santandercodersjava2020" target="_blank"><h5>Projeto Integrador Santander Coders Java 2020</h5></a></p>
-          <p><a href="https://www.digitalhouse.com/br/curso/desenvolvimento-web-full-stack" target="_blank"><h6>Digital House</h6></a></p>
-          <p><a class="backtop" href="#">Voltar ao topo</a></p>
-        </div>
-        <div class="fsec3">
-          <p>
+  
+        <div class="col fsec2">
+          <div class="row sec1">
+            <div><a href="https://www.becas-santander.com/pt/program/santandercodersjava2020" target="_blank">
+              <h5>Projeto Integrador Santander Coders Java 2020</h5>
+            </a></div>
+          </div>
+          <div class="row sec2">
+            <div><a href="https://www.digitalhouse.com/br/curso/desenvolvimento-web-full-stack" target="_blank">
+              <h6>Digital House></h6>
+            </a></div>
+          </div>
+          <div class="row sec3">
+            <div><a class="backtop" href="#">Voltar ao topo</a></div>
+         </div>
+       </div>
+  
+        <div class="col fsec3">
+          <div class="row">
             <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/whats.png" target="_blank"></a>
             <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/facebook1.png" target="_blank"></a>
             <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/gplus.png" target="_blank"></a>
             <a class="fsociamedia" href="#"><img class="fsociamedia" src="./img/github.png" target="_blank"></a>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
+  
+  
   </main>
 
   <!-- Principal JavaScript do Bootstrap
