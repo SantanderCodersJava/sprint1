@@ -335,6 +335,14 @@ label.photo{
    width: 800px;
   /* background: #EE0909; */
 }
+
+.divsection2{
+  
+  background-color: #EE0909;
+  width: 800px;
+  height: 2px;
+ /* background: #EE0909; */
+}
 .cardbodyyou{
     display: flex;
     /* background: #faf064; */
@@ -580,10 +588,73 @@ img.naosei{
   background: red;
 }
 .frame{
-  width: 800px;
+  width: 900px;
   height: 450px;
   border: none;
-  background:yellow;g
+ 
+}
+.tbnews{
+  width: 800px;
+}
+.tbnews td{
+  
+}
+.tr1{
+  font-weight:bold;
+   padding: 10px;
+}
+.tr2{
+  background: #ff000046;
+ }
+.theadnews{
+  border: 1px solid #e09090;
+   color: aliceblue; 
+   background: #ff0000;
+}
+
+.newsdropdown{
+  margin-left: 70%;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+  background-color: #fdfdfd13;
+  color: #5A5A5A;
+  cursor: pointer;
+  padding: 18px;
+  width: 800px;
+  text-align: left;
+  border: none;
+  outline: none;
+  outline-style: none;
+  transition: 0.4s;
+}
+.active.accordion {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  outline-style: none;
+  outline-style: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  outline-style: none;
+  outline-style: none;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  margin-top: 6%;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 /* ....................................................................................... */
