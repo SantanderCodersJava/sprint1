@@ -3,6 +3,12 @@
 
 /* Gerais*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -59,7 +65,7 @@ p, li {
     background-color: #EE0909;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: .5s;
+    transition: .6s;
 }
 
 /* links da barra de navegação lateral */
@@ -186,13 +192,14 @@ span {
     
     #btn-sair a {
         padding-top: 10px;
-        padding-left: 28px;
+        
     }
 
     .cardbodyyou {
         width: 540px;
         flex-wrap: wrap;
         justify-content: end;
+        height: auto;
     }
 
     .cardtopyou div:nth-child(2) {
@@ -220,7 +227,7 @@ span {
     .divsection {
         width: 500px;
         position: relative;
-        right: 75px;
+        left: 15px;
     }
 
     .div-cidade {
@@ -253,7 +260,7 @@ span {
     }
 
     #input-busca {
-        left: 270px;
+        left: 220px;
         top: 12px;
         width: 130px;
         height: 30px;
@@ -291,7 +298,7 @@ span {
 
     #btn-sair a {
         padding-top: 7px;
-        padding-left: 30px;
+       
     }
     
     .silhuette {
@@ -354,9 +361,7 @@ span {
     }
 
     .divsection {
-        width: 290px;
-        position: relative;
-        right: 230px;
+        width: 275px;
     }
 
 }
