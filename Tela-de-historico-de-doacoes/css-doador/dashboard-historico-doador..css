@@ -3,12 +3,6 @@
 
 /* Gerais*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -26,20 +20,23 @@ p, li {
     border-top: 1px solid #EE0909;
     border-bottom: 3px solid #EE0909;
     border-right: 2px solid #EE0909;
-   
+    width: 100%;
     height: 70px;
 }
+
+.cab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 #msg-doador {
     color: #ee0909;
     font-weight: bold;
-    font-size: 20px;
-    display: inline;
-    
-    position: relative;
-    top: 20px;
-    left: 70px;
-    
+    font-size: 20px;    
+    margin-left: 250px;
 }
 
 #input-busca {
@@ -48,10 +45,7 @@ p, li {
     border: none;
     border-radius: 20px;
     box-shadow: 4px 4px 3px #EE0909;
-    display: inline;
-    position: relative;
-    left: 850px;
-    bottom: 17px;
+    margin-right: 20px;
 }
 
 /* barra de navegação lateral */
@@ -65,7 +59,7 @@ p, li {
     background-color: #EE0909;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: .6s;
+    transition: .5s;
 }
 
 /* links da barra de navegação lateral */
@@ -131,20 +125,135 @@ span {
     left: 15px;
 
 }
+#btn-sair {
+    background-color: #ee0909;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    position: relative;
+    left: 50px;
+    margin-top: 50px;
+}
 
-
-
-/* área onde aparecerá o conteúdo dos links */
-.principal {
-    margin-left: 100px;
-    width: 80%;
-    background-color: #fff;
-    transition: margin 1s;
+#btn-sair a {
+    padding-top: 8px;
+    padding-left: 30px;
 }
 
 
+#btn-sair:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #F45858;
+}
+
+/* david */ 
+
+.center{
+    text-align: center;
+}
+
+
+.principal{
+    width: 90%;
+    margin: auto;
+    transition: padding .5s;
+}
+
+.botao-whatsapp{
+    border: none;
+    outline: 0px;
+    color: #FFF;
+    background-color: #FFFF;
+}
+
+button:focus{
+    outline: 0;
+}
+.section-1 div {
+    margin: 10px;
+}
+.section-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-1, .section-2, .section-3{
+    width: 100%;
+    padding: 10px;
+    margin: 50px 0px;
+}
+
+
+.texto-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.texto-quadro{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background: #EE0909;
+    color: #FFF;
+    border-radius: 30px;
+}
+.tabela{
+    width: 100%;
+    font-size: 16pt;
+}
+
+.tabela tbody tr td{
+    padding: 15px;
+}
+
+.tabela thead tr th{
+    color: #EE0909;
+    margin:  10px;
+    padding: 10px;
+
+}
+
+.botao-agendar{
+    background-color: #EE0909;
+    border-radius: 30px;
+    color: #FFF;
+    padding: 5px;
+    border: none;
+}
+
+.espaco-linhas tr{
+    margin-top: 10px;
+}
+.botao-agendar a{
+    padding: 30px;
+    color: #FFF;
+}
+.botao-agendar a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
 /* responsividade */
-@media(max-width: 768px) {
+@media (min-width: 768px) and (max-width : 1200px) {
+    #msg-doador {    
+        margin-left: 170px;
+    }
+
+    .tabela{
+        font-size: 14pt;
+    }
+    
     span {
         font-size: 25px;
         bottom: 55px;
@@ -162,7 +271,7 @@ span {
 
     #input-busca {
         left: 520px;
-        bottom: 13px;
+        bottom: 15px;
         width: 150px;
         height: 35px;
     }
@@ -192,53 +301,30 @@ span {
     
     #btn-sair a {
         padding-top: 10px;
-        
+        padding-left: 28px;
     }
-
-    .cardbodyyou {
-        width: 540px;
-        flex-wrap: wrap;
-        justify-content: end;
-        height: auto;
-    }
-
-    .cardtopyou div:nth-child(2) {
-        font-size: 1.6rem;
-       
-    }
-
-    .cardtopyou div:nth-child(3) {
-        min-width: 485px;
-    }
-
-    .textboxGG {
-        width: 500px;
-    }
-
-    .cardbodyaddres {
-        width: 540px;
-    }
-
-    .btnenviar {
-        width: 75px;
-        height: 90px;
-    }
-
-    .divsection {
-        width: 500px;
-        position: relative;
-        left: 15px;
-    }
-
-    .div-cidade {
-        padding-bottom: 20px;
-    }
-
-
+   
+    
 }
 
 
-@media(max-width: 450px) {
+@media(max-width: 460px) {
+    #msg-doador {    
+        margin-left: 100px;
+    }
+    
+    .principal{
+        margin: 0;
+        width: 100%;
+     }
+   
+   
+    .tabela{
+        font-size: 8pt;
+    }
+    .texto-quadro{
+        font-size: 10pt;
+    }
 
     #cabecalho-area {
         height: 80px;
@@ -246,7 +332,7 @@ span {
 
     span {
         font-size: 20px;
-        bottom: 55px;
+        bottom: 50px;
     }
 
     .sidenav .closebtn {
@@ -256,12 +342,12 @@ span {
     #msg-doador {
         font-size: 14px;
         left: 150px;
-        top: 6px;
+        top: 10px;
     }
 
     #input-busca {
-        left: 220px;
-        top: 12px;
+        left: 260px;
+        top: 15px;
         width: 130px;
         height: 30px;
     }
@@ -282,7 +368,6 @@ span {
     .nome-doador {
         font-size: 14px;
         bottom: 20px;
-        left: 5px;
     }
 
     .sidenav a {
@@ -298,79 +383,16 @@ span {
 
     #btn-sair a {
         padding-top: 7px;
-       
-    }
-    
-    .silhuette {
-        justify-content: start;
-    }
-    
-    .principal {
-        margin-left: 20px;
-    }
-
-    img.cadphoto {
-        width: 100px;
-        height: 100px;
-    }
-
-    label.photo {
-        margin-left: 25px;
-    }
-
-    .cardtopyou div:nth-child(2) {
-        font-size: 1.4rem;
-    }
-
-    .cardbodyyou {
-        width: 300px;
-        justify-content: start;
-    }
-
-    .cardbodyaddres {
-        width: 400px;
-    }
-
-    .textboxGG {
-        width: 270px;
-    }
-
-    .enviar {
-        margin-top: 30%;
-    }
-
-    .btnenviar {
-        width: 65px;
-        height: 80px;
-    }
-
-    .textboxG {
-        width: 260px;
-    }
-
-    .sexo {
-        padding-bottom: 20px;
-    }
-
-    .cardbodyaddres {
-        width: 300px;
-    }
-
-    .textboxM {
-        width: 120px;
-    }
-
-    .divsection {
-        width: 275px;
+        padding-left: 30px;
     }
 
 }
 
-
-
 /* barra de navegação lateral */
 @media(max-height: 450px) {
-    .sidenav {
+
+
+     .sidenav {
         padding-top: 15px;
     }
 
