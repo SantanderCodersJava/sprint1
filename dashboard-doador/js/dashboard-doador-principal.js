@@ -37,12 +37,6 @@ btnFechar.addEventListener("click", function closeNav() {
 });
 
 
-
-
-
-
-
-
 //ACCORDION - NEWSLETTER 
 // 
 var acc = document.getElementsByClassName("accordion");
