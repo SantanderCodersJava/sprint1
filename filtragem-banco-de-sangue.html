@@ -6,7 +6,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" alt="DooAmor" href="./img/icons/nurseico.jpeg">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" crossorigin=""/>  
+  
   <title>DooAmor</title>
 
   <!-- Principal CSS do Bootstrap -->
@@ -70,35 +71,29 @@
   <div class="agendarbtn"><a href="#"><img class="topico3" src="./img/agendarbtn2.png"></a></div>
   <main role="main">
    <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
-
-    <div class="container main-content">
-
-      <p class="titulo-filtragem" >Você pode pesquisar  clicando nas localizações no mapa ou pesquisar por região ou ainda pesquisar o nome do banco de sangue</p>
-        
-          <div class="d-flex flex-row justify-content-around">
-
-            <div  class="col-sm"  >
-                <img src="img/map.svg" alt="" srcset="">
-            </div>
+      <div class="content">
+        <p class="titulo-filtragem" >Você pode olhar as localizações de bancos de sangue no mapa, pesquisar por região ou nome do banco de sangue</p>
           
-            <div class="d-flex flex-column justify-content-around align-items-center ">
-                
-                <form class="col-sm" action="">
-                  <select name="uf" id="">
-                    <option value="SP">SP</option>
-                    <option value="RJ">RJ</option>
-                    <option value="MG">MG</option>
-                  </select>
-                  <select name="cidade" id="">
-                    <option value="SP">São Paulo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG">Minas Gerais</option>
-                  </select>
-                </form> 
+        <div class="mapa-form">
+          <div id="mapa" ></div>
 
-                <img src="./img/mapasilhueta.svg" alt="" srcset="">
-
+          <div>
+            <form action="">
+              <select name="uf" id="">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+              </select>
+              <select name="cidade" id="">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+              </select>
+            </form>
+            <div>
+              <img src="./img/mapasilhueta.svg" alt="" srcset="">
             </div>
+          </div>
             
         </div>
         <div>
@@ -129,64 +124,12 @@
                 <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
                 <td>10.0</td>
                 <td><a href="">agendar</a></td>
-              </tr>                 
-            
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr> 
-              
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr> 
-
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr> 
-
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr> 
-
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr> 
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr>      
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr>      
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr>                          
+              </tr>                     
             </tbody>
           </table>
+
         </div>
-      </div>  
+      </div>
   </main>
   <footer>
     <div class="fsections">
@@ -260,6 +203,9 @@
     <text x="0" y="25"
       style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text>
   </svg>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" crossorigin=""></script>
+  <script src="js/filtragem-banco-de-sangue.js"></script>
 </body>
 
 </html>
