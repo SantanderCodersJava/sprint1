@@ -1,22 +1,22 @@
 main{
     background: #ee0909cc;
-    width: 100%;
 }
-main  .main-content{
-    width: 100%;
+main .mapa-form div#mapa{
+    width: 65%;
+    height: 400px;
+}
+main .mapa-form{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-main  .main-content form select {
+main  .mapa-form div form select {
     background-color: #fff;
     margin-top: 50px;
 }
 
-main  .main-content div{
-    width: 100%;
-    margin-top: 30px; 
-}
 button#procurar{
     border: none;
     border-radius: 20px;
@@ -30,25 +30,32 @@ button#procurar:hover{
     cursor: pointer;
     background-color: #dddddd;
 }
-main  .main-content div pesquisar-banco{
+
+main div#pesquisar-banco{
     display: flex;
+    flex-direction: row;
+    margin: 30px 0;
     width: 100%;
 }
-main  .main-content div input{
+main div#pesquisar-banco input{
     width: 100%;
     padding: 20px;
     border-radius: 20px;
     outline: 0;
     border: none;
 }
-main  .main-content p{
+main div.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main  div.content p{
     font-size: 26px;
     color: #FFF;
     text-align: center;
 }
 
-main  .main-content table{
-    margin: 30px 0;
+main  div.content table{
     padding: 20px;
     width: 100%;
     background-color: #606060;
@@ -56,18 +63,18 @@ main  .main-content table{
     box-sizing: border-box;
 }
 
-main  .main-content table thead tr th{
+main  div.content table thead tr th{
     color: #FFF;
 }
 
 
-main  .main-content table tr td, th{
+main  div.content table tr td, th{
     padding: 20px;
 }
-main  .main-content table tbody tr:nth-child(even){
+main  div.content table tbody tr:nth-child(even){
     background-color: #C4C4C4;;
 }
-main  .main-content table tbody tr:nth-child(odd){
+main  div.content table tbody tr:nth-child(odd){
     background-color: #FFF; 
 }
 footer{
