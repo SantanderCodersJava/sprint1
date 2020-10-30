@@ -72,23 +72,23 @@
   <main role="main">
    <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
       <div class="content">
-        <p class="titulo-filtragem" >Você pode olhar as localizações de bancos de sangue no mapa, pesquisar por região ou nome do banco de sangue</p>
           
         <div class="mapa-form">
           <div id="mapa" ></div>
 
           <div>
-            <form action="">
-              <select name="uf" id="">
+            <form id="form-locais-mapa" action="">
+              <select name="uf" id="uf">
                 <option value="SP">SP</option>
                 <option value="RJ">RJ</option>
                 <option value="MG">MG</option>
               </select>
-              <select name="cidade" id="">
-                <option value="SP">São Paulo</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="MG">Minas Gerais</option>
+              <select name="cidade" id="cidade">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Minas Gerais">Minas Gerais</option>
               </select>
+              <input type="submit" value="Buscar">
             </form>
             <div>
               <img src="./img/mapasilhueta.svg" alt="" srcset="">
@@ -98,10 +98,10 @@
         </div>
         <div>
 
-          <div id="pesquisar-banco" class="d-flex  justify-content-around">
-            <input placeholder="Search" type="search" > 
-            <button id="procurar" ><img src="img/procurar.svg" alt="" srcset=""></button>
-          </div>
+          <form id="pesquisar-banco" class="d-flex  justify-content-around">
+            <input placeholder="Search" type="search" id="input-procurar" > 
+            <input value="" type="submit" id="procurar-nome-banco" alt="" srcset="">
+          </form>
 
           <table>
             <thead>
@@ -112,19 +112,8 @@
                 <th>Agendar</th>
               </tr>          
             </thead>
-            <tbody>
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr>      
-              <tr>
-                <td>Banco Sangue Paulista</td>
-                <td>R. Dr. Alceu de Campos Rodrigue, Vila Nova Conceição, Nº 46, São Paulo</td>
-                <td>10.0</td>
-                <td><a href="">agendar</a></td>
-              </tr>                     
+            <tbody id="conteudo-tabela">
+                     
             </tbody>
           </table>
 
