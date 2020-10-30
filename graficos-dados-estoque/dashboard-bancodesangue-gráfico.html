@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard doador principal</title>
+    <title>Dashboard - Banco de sangue (Gráficos)</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bolsa_sangue.css">
     <link rel="stylesheet" href="css/dashboard-doador-principal.css">
+    
+
     
     <!-- Scripts-->
     <script
@@ -16,12 +19,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 </head>
 <body>
     <header>
         <div id="cabecalho-area">
             <div class="container">
-                <p id="msg-doador">Olá, nome do doador</p>
+                <p id="msg-doador">Olá, nome do banco de sangue</p>
                 <form action="">
                     <input type="text" id="input-busca" class="form-control" name="busca" placeholder="busca"> 
                 </form>
@@ -43,14 +50,15 @@
                 </div>               
 
                 <!-- links da barra de navegação lateral -->
+                <a href="#">Meu cadastro</a>
+                <a href="#">Meu estoque</a>
+                <a href="#">Meus dados</a>
+                <a href="#">Meu estoque</a>
+
+                <div id="btn-sair">
+                    <a href="#" >Sair</a>
+                </div>
                 
-                <a href="dashboard-doador-meus-dados.html">Meus dados</a>
-                <a href="../Tela-de-historico-de-doacoes/dashboard-historico-doador.html">Minhas doações</a>
-                <a href="../Tela-de-historico-de-doacoes/dashboard-banco-agendamentos.html">Agendamentos</a>
-                <a href="./newsletter.html">Newsletter</a>
-               <div id="btn-sair">
-                   <a href="../home.html" >Sair</a>
-              </div>
             </div>
             <!-- Elemento para abrir a barra de navegação -->
             <span id="btn-abrir">☰</span>
@@ -58,15 +66,18 @@
 
         <!-- área que aparecerá o conteúdo dos links-->
         <div class="principal">
-            <div class="container">
-                <h3>Sr Fulano</h3>
-                <h1>Informações importantes e novidades</h1>
-                <h2>dentre outros avisos, aparecem nessa tela de boas vindas!</h2>
-            </div>
+            <div class="chart-container">
+                <div id="titulo_grafico"><p class="título">quantidade de bolsas de sangue X meses </p></div>
+                <canvas id="grafico_sangue"></canvas>
+            </div> 
+
+            <div class="chart-container">
+                <div id="titulo_grafico"><p class="título">agendamentos X meses </p></div>
+                <canvas id="grafico_agendamento"></canvas>  
+            </div>   
         </div>
-
     </main>
-
-    <script src="js/dashboard-doador-principal.js"></script>    
+    <script src="js/bolsa_sangue.js"></script>
+    <script src="js/dashboard-doador-principal.js"></script>
 </body>
 </html>
